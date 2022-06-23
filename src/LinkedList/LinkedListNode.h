@@ -8,6 +8,7 @@
 struct LinkedListNode {
     LinkedListNode* next;
     int val;
+    LinkedListNode(int x = 0) : next(nullptr), val(x) {};
 };
 
 #endif //DATA_STRUCTURES_AND_ALGORITHMS_LINKEDLISTNODE_H

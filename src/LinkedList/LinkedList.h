@@ -5,10 +5,12 @@
 
 class LinkedList {
 public:
-    static LinkedListNode* FindMidPoint(const LinkedListNode& head);
-    const LinkedListNode* getHead();
+    static void PushBack(LinkedListNode* head, LinkedListNode* element);
+    static LinkedListNode* MergeSort(LinkedListNode* head);
+
 private:
-    LinkedListNode* head_;
+    static LinkedListNode* SplitMidPoint(LinkedListNode* head);
+    static LinkedListNode* merge(LinkedListNode* left, LinkedListNode* right);
 };
 
 #endif //DATA_STRUCTURES_AND_ALGORITHMS_LINKEDLIST_H_
